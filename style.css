@@ -1,8 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    background: var(--tg-theme-bg-color);
-    color: var(--tg-theme-text-color);
 }
 
 .mainwindow {
