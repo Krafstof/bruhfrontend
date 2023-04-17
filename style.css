@@ -53,6 +53,7 @@ body {
     gap: 16px;
     font-size: 22px;
     font-weight: 600;
+    color: var(--tg-theme-text-color);
 }
 
 .buttonContainer > button > img {
