@@ -53,12 +53,55 @@ body {
     gap: 16px;
     font-size: 22px;
     font-weight: 600;
-    color: var(--tg-theme-text-color);
+    color: #FFFFFF;
 }
 
 .buttonContainer > button > img {
     width: 32px;
     height: 32px;
     background-color: var(--tg-theme-button-color);
+    color: #FFFFFF;
+}
+
+.contentRow {
+    width: 90%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    align-self: center;
+    border-bottom: 1px solid;
+    border-bottom-color: var(--tg-theme-text-color);
+}
+
+.contentDescription {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.contentDescription > .title {
+    font-size: 22px;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
     color: var(--tg-theme-text-color);
+}
+
+.contentDescription > .description {
+    font-size: 18px;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: var(--tg-theme-hint-color);
+}
+
+.contentAction {
+    margin-left: auto;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--tg-theme-hint-color);
 }
