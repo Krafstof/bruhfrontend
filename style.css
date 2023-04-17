@@ -25,18 +25,38 @@ body {
 
 .mainContent {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.searchButtonsContainer {
+    display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 10%;
 }
 
 .buttonSearch {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: auto;
     border-radius: 8px;
     background-color: var(--tg-theme-button-color);
     padding: 8px;
+}
+
+.editInfoContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonEditData {
+    background-color: var(--tg-theme-button-color);
+    width: 80%;
+    height: 40px;
+    padding: 4px;
+    font-weight: 600;
 }
 
 .buttonSearch > span {
@@ -48,7 +68,6 @@ body {
     width: 48px;
     height: 48px;
     margin: auto;
-    background-color: var(--tg-theme-hint-color);
     border-radius: 24px;
 }
 
