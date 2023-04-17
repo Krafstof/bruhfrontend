@@ -38,7 +38,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #FFFFFF;
 }
 
 .buttonContainer.buttonFirst > button {
@@ -78,4 +77,5 @@ body {
     width: 32px;
     height: 32px;
     background-color: var(--tg-theme-button-color);
+    color: var(--tg-theme-text-color);
 }
