@@ -34,6 +34,14 @@ body {
     flex-direction: column;
     justify-content: center;
     margin: auto;
+    border-radius: 8px;
+    background-color: var(--tg-theme-button-text-color);
+    padding: 8px;
+}
+
+.buttonSearch > span {
+    font-weight: 600;
+    margin-top: 4px;
 }
 
 .imgSearch {
