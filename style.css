@@ -8,69 +8,74 @@ body {
 
 .mainwindow {
     width: 100%;
-    gap: 8px;
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .mainwindowTitleContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    font-size: 36px;
 }
 
 .mainwindowTitleContainer > p {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 12px;
-    
 }
 
 .mainContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    gap: 16px;
 }
 
-.searchButtonsContainer {
+.buttonContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 10%;
+    background-color: #FFFFFF;
 }
 
-.buttonSearch {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 8px;
-    background-color: var(--tg-theme-button-color);
-    padding: 8px;
-}
-
-.editInfoContainer {
-    display: flex;
-    justify-content: center;
-}
-
-.buttonEditData {
-    background-color: var(--tg-theme-button-color);
+.buttonContainer.buttonFirst > button {
     width: 80%;
-    height: 40px;
-    padding: 4px;
-    font-weight: 600;
+    height: 48px;
+    background-color: var(--tg-theme-button-color);
     border-radius: 8px;
     border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 32px;
+    gap: 16px;
 }
 
-.buttonSearch > span {
-    font-weight: 600;
-    margin-top: 4px;
+.buttonContainer.buttonFirst > button > img {
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+    background-color: var(--tg-theme-button-color);
 }
 
-.imgSearch {
-    width: 48px;
+.buttonContainer > button {
+    width: 80%;
     height: 48px;
-    margin: auto;
-    border-radius: 24px;
+    background-color: var(--tg-theme-button-color);
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 32px;
+    gap: 16px;
 }
 
+.buttonContainer > button > img {
+    width: 32px;
+    height: 32px;
+    background-color: var(--tg-theme-button-color);
+}
