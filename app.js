@@ -1,9 +1,5 @@
 let tg = window.Telegram.WebApp;
-var MainButton = tg.MainButton;
-var BackButton = tg.BackButton;
 
-MainButton.show();
-BackButton.show();
 tg.expand();
 
 let mainwindowTitleContainer = document.getElementById("mainwindowTitleContainer");
