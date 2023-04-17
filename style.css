@@ -35,7 +35,7 @@ body {
     justify-content: center;
     margin: auto;
     border-radius: 8px;
-    background-color: var(--tg-theme-button-text-color);
+    background-color: var(--tg-theme-button-color);
     padding: 8px;
 }
 
