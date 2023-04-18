@@ -6,25 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Doc</title>
 </head>
-<body>
-    <div class="mainwindow">
-        <div class="mainwindowTitleContainer" id="mainwindowTitleContainer"></div>
-        <div class="mainContent">
-            <div class="buttonContainer">
-                <button id="searchButton" onclick="document.location='searchProjects.html'"><img src="resources/file-search-icon.svg">Подходящие проекты</button>
-            </div>
-            <div class="buttonContainer">
-                <button id="searchButton"><img src="resources/task-clock-icon.svg">Мои задачи</button>
-            </div>
-            <div class="buttonContainer">
-                <button id="searchButton"><img src="resources/task-edit-icon.svg">Мои проекты</button>
-            </div>
-            <div class="buttonContainer">
-                <button id="searchButton"><img src="resources/person_profile_image.svg">Профиль</button>
-            </div>
-        </div>
-    </div>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script src="app.js"></script>
+<body style="margin:0px;padding:0px;overflow:hidden">
+    <iframe src="mainPage.html" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="100%" width="100%"></iframe>
 </body>
 </html>
