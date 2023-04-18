@@ -30,6 +30,7 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 16px;
+    background-color: blueviolet;
 }
 
 .buttonContainer {
