@@ -30,21 +30,16 @@ xhr.onload = function() {
   const projects = JSON.parse(xhr.responseText);
   
   // Создаем новый элемент таблицы
-  const mainWindow = document.getElementById('mainContent');
-  const table = mainWindow.createElement('table');
+  const table = document.createElement('table');
 
   // Создаем заголовок таблицы
   const header = table.createTHead();
   const row = header.insertRow();
-  const idCell = row.insertCell();
-  const userIdCell = row.insertCell();
   const nameCell = row.insertCell();
   const descCell = row.insertCell();
   const budgetCell = row.insertCell();
 
   // Задаем названия заголовков
-  idCell.innerText = 'ID';
-  userIdCell.innerText = 'User ID';
   nameCell.innerText = 'Name';
   descCell.innerText = 'Description';
   budgetCell.innerText = 'Budget';
@@ -55,20 +50,16 @@ xhr.onload = function() {
   // Заполняем таблицу данными
   projects.forEach(function(project) {
     const row = body.insertRow();
-    const idCell = row.insertCell();
-    const userIdCell = row.insertCell();
     const nameCell = row.insertCell();
     const descCell = row.insertCell();
     const budgetCell = row.insertCell();
 
     // Заполняем ячейки таблицы значениями из объекта проекта
-    idCell.innerText = project.id;
-    userIdCell.innerText = project.user_id;
     nameCell.innerText = project.name;
     descCell.innerText = project.description;
     budgetCell.innerText = project.budget;
   });
 
   // Добавляем таблицу на страницу
-  document.body.appendChild(table);
+  document.getElementById('mainContent').appendChild(table);
 };

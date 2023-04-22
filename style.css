@@ -30,7 +30,10 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 16px;
-    background-color: blueviolet;
+}
+
+.mainContent > table {
+    width: 90%;
 }
 
 .buttonContainer {
