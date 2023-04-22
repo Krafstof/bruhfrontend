@@ -1,22 +1,8 @@
-let mainwindowTitleContainer = document.getElementById("clickcker");
-let url = "http://158.160.60.78"
-let uri = `${url}:8000/projects`
-/*console.log(uri)
-mainwindowTitleContainer.addEventListener('click', () => {
-  fetch(`${uri}/?skip=0&limit=100`, {
-   headers: {
-      'Accept': 'application/json'
-   }
-})
-   .then(response => response.text())
-   .then(text => console.log(text))
-});*/
-
 // Создаем новый XMLHttpRequest объект
 const xhr = new XMLHttpRequest();
 
 // Открываем соединение с сервером
-xhr.open('GET', uri, true);
+xhr.open('GET', 'http://158.160.60.78/api/projects/', true);
 
 // Устанавливаем заголовок для указания типа данных, которые мы ожидаем получить
 xhr.setRequestHeader('Accept', 'application/json');
@@ -35,11 +21,15 @@ xhr.onload = function() {
   // Создаем заголовок таблицы
   const header = table.createTHead();
   const row = header.insertRow();
+  const idCell = row.insertCell();
+  const userIdCell = row.insertCell();
   const nameCell = row.insertCell();
   const descCell = row.insertCell();
   const budgetCell = row.insertCell();
 
   // Задаем названия заголовков
+  idCell.innerText = 'ID';
+  userIdCell.innerText = 'User ID';
   nameCell.innerText = 'Name';
   descCell.innerText = 'Description';
   budgetCell.innerText = 'Budget';
@@ -50,16 +40,20 @@ xhr.onload = function() {
   // Заполняем таблицу данными
   projects.forEach(function(project) {
     const row = body.insertRow();
+    const idCell = row.insertCell();
+    const userIdCell = row.insertCell();
     const nameCell = row.insertCell();
     const descCell = row.insertCell();
     const budgetCell = row.insertCell();
 
     // Заполняем ячейки таблицы значениями из объекта проекта
+    idCell.innerText = project.id;
+    userIdCell.innerText = project.user_id;
     nameCell.innerText = project.name;
     descCell.innerText = project.description;
     budgetCell.innerText = project.budget;
   });
 
   // Добавляем таблицу на страницу
-  document.getElementById('mainContent').appendChild(table);
+  document.body.appendChild(table);
 };
